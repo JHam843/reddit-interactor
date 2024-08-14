@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jamal\\OneDrive\\Documents\\reddit-interactor\\RedditStatsTracker\\RedditStatsTracker.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jamal\\OneDrive\\Documents\\reddit-interactor\\RedditStatsTracker\\RedditStatsTracker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jamal\\OneDrive\\Documents\\reddit-interactor\\RedditStatsTracker\\RedditStatsTracker.csproj",
+        "projectName": "RedditStatsTracker",
+        "projectPath": "C:\\Users\\jamal\\OneDrive\\Documents\\reddit-interactor\\RedditStatsTracker\\RedditStatsTracker.csproj",
+        "packagesPath": "C:\\Users\\jamal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jamal\\OneDrive\\Documents\\reddit-interactor\\RedditStatsTracker\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jamal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[111.4.1, )"
+            },
+            "xUnit": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.425\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
