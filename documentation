@@ -1,0 +1,37 @@
+1. structure
+reddit-interactor/
+├── RedditStatsTracker.csproj       // project file
+├── Program.cs              
+├── appsettings.json
+├── Services/
+│ ├── RedditService.cs              // for communicating with Reddit's API. It uses HttpClient to send requests and process responses. The deserialized data is returned as a list of Post objects.
+│ ├── StatisticsService.cs          // tracks statistics in-memory. TrackPost is called for each post retrieved, updating the most upvoted post and the user with the most posts. The tracked statistics can then be queried using the provided methods.
+├── Models/
+│ ├── Post.cs
+│ ├── UserStats.cs
+│ ├── RedditConfig.cs               // easy to manage and access configuration settings throughout your application.
+├── Interfaces/
+│ ├── IRedditService.cs
+│ ├── IStatisticsService.cs
+└── Utils/
+│ ├── RateLimiter.cs                // automatically manages API rate limits
+│-
+
+2. brief description
+    - **Program.cs**: Entry point of the application.
+    - **Services/**: Contains the business logic for interacting with the Reddit API and processing data.
+    - **Models/**: Defines the data models used throughout the application.
+    - **Interfaces/**: Contains interface definitions for services, promoting loose coupling.
+    - **Utils/**: Contains utility classes like the RateLimiter.
+
+3. challenges while deveopment
+    - I struggled with authentication.
+        I checked clientId and clientSecret for several times and tested. 
+        But it always gave me 403 error.
+        After that I tested on postman, and it worked.
+        Finally, I noticed there was a problem with Agent code in header.
+        First I tried with the same agent as postman, after that I replaced it with my app name and username.
+    - I wasted good amount of time while debugging was not working well.
+        The reason was when I debug, the app looked appsettings.json in debug folder, that's why it couldn't get the information from appsettings.json.
+        Finally, I found the solution to insert the code in RedditStatsTracker.csproj to copy appsettings.json file to any output folder.
+
